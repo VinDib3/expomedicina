@@ -134,6 +134,8 @@ img{max-width:100%;height:auto}
 .project-title{min-width:0;max-width:100%}
 .project-title p,.project-foot span{overflow-wrap:anywhere}
 .project-label{font-size:12px;font-weight:800;color:var(--blue);background:#eaf3fc;border-radius:999px;padding:7px 11px;white-space:normal}
+.project-actions{display:flex;align-items:center;justify-content:flex-end;gap:12px;flex-wrap:wrap;margin-left:auto}.project-actions .project-label{display:inline-flex;align-items:center}@media(max-width:850px){.project-actions{margin-left:0;justify-content:flex-start}}@media(max-width:520px){.project-actions{width:100%;align-items:stretch;flex-direction:column}.project-actions .project-label{align-self:flex-start}}
+.pdta-button{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:10px 15px;border-radius:999px;background:var(--navy);color:#fff;text-decoration:none;font-size:12px;font-weight:800;letter-spacing:.01em;border:1px solid var(--navy);box-shadow:0 5px 14px rgba(24,54,94,.14);transition:transform .18s ease,background .18s ease,box-shadow .18s ease;white-space:normal;text-align:center}.pdta-button:hover{background:var(--blue);border-color:var(--blue);transform:translateY(-1px);box-shadow:0 8px 18px rgba(24,54,94,.2)}.pdta-button .pdta-icon{font-size:16px;line-height:1}@media(max-width:600px){.pdta-button{width:100%;box-sizing:border-box}}
 .chronicity{padding-top:76px}
 .chronic-project .project-symbol{background:linear-gradient(145deg,#2d7ab7,#173f70)}
 .collaboration-section{padding-top:76px;padding-bottom:76px}
@@ -170,6 +172,13 @@ img{max-width:100%;height:auto}
 .video-open:hover{text-decoration:underline}
 @media(max-width:600px){.video-quicklinks{display:grid;grid-template-columns:1fr}.video-link{width:100%}.project-video{padding:14px}.project-video-head{align-items:flex-start;flex-direction:column}.project-video video{aspect-ratio:9/16;max-height:70vh}}
 
+</style>
+
+<style>
+.audio-launch-wrap{margin:0 0 12px;display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.audio-launch-btn{appearance:none;border:0;border-radius:8px;padding:11px 16px;background:#176b4d;color:#fff;font:600 14px/1.2 inherit;cursor:pointer;box-shadow:0 2px 7px rgba(0,0,0,.12)}
+.audio-launch-btn:hover{background:#10543b}
+.audio-launch-note{font-size:12px;opacity:.78}
 </style>
 </head>
 <body>
@@ -229,12 +238,12 @@ img{max-width:100%;height:auto}
   </div>
   <div class="project-video" id="video-cronici">
     <div class="project-video-head"><div><h4>Guarda il video del progetto</h4><p>Gestione delle cronicità · Percorsi di cura digitali</p></div><a class="video-open" href="https://vindib3.github.io/expomedicina/CroniciExpo.mp4" target="_blank" rel="noopener">Apri il video ↗</a></div>
-    <video controls autoplay muted preload="metadata" playsinline><source src="https://vindib3.github.io/expomedicina/CroniciExpo.mp4" type="video/mp4">Il browser non supporta la riproduzione video. <a href="https://vindib3.github.io/expomedicina/CroniciExpo.mp4">Apri il video</a>.</video>
+    <video controls preload="metadata" playsinline><source src="https://vindib3.github.io/expomedicina/CroniciExpo.mp4" type="video/mp4">Il browser non supporta la riproduzione video. <a href="https://vindib3.github.io/expomedicina/CroniciExpo.mp4">Apri il video</a>.</video>
   </div>
   <article class="project chronic-project">
     <div class="project-top">
       <div class="project-title"><div class="project-symbol">+</div><div><h3>Orchestratore digitale della cronicità</h3><p>PDTA · PAI · integrazione dei processi · continuità assistenziale</p></div></div>
-      <span class="project-label">ASP Ragusa · ASP Messina</span>
+      <div class="project-actions"><span class="project-label">ASP Ragusa · ASP Messina</span><a class="pdta-button" href="https://vindib3.github.io/digitalpdta.scompenso.cardiaco/PDTA_SC.html" target="_blank" rel="noopener noreferrer" aria-label="Apri il BPMN interattivo del PDTA Scompenso Cardiaco"><span class="pdta-icon" aria-hidden="true">↗</span> Apri il BPMN interattivo</a></div>
     </div>
     <div class="project-body">
       <p class="lead">La soluzione supporta la gestione strutturata dei pazienti cronici, rendendo più leggibili le attività previste dal percorso e facilitando il coordinamento tra professionisti e servizi territoriali.</p>
@@ -262,7 +271,7 @@ img{max-width:100%;height:auto}
     </div>
     <div class="project-video" id="video-grandi-anziani">
       <div class="project-video-head"><div><h4>Guarda il video del progetto</h4><p>Grandi Anziani · Telemedicina e domiciliarità</p></div><a class="video-open" href="https://vindib3.github.io/expomedicina/ExpoGrandiAnziani.mp4" target="_blank" rel="noopener">Apri il video ↗</a></div>
-      <video controls autoplay muted preload="metadata" playsinline><source src="https://vindib3.github.io/expomedicina/ExpoGrandiAnziani.mp4" type="video/mp4">Il browser non supporta la riproduzione video. <a href="https://vindib3.github.io/expomedicina/ExpoGrandiAnziani.mp4">Apri il video</a>.</video>
+      <video controls preload="metadata" playsinline><source src="https://vindib3.github.io/expomedicina/ExpoGrandiAnziani.mp4" type="video/mp4">Il browser non supporta la riproduzione video. <a href="https://vindib3.github.io/expomedicina/ExpoGrandiAnziani.mp4">Apri il video</a>.</video>
     </div>
     <div class="ga-layout">
       <div class="ga-intro">
@@ -299,7 +308,7 @@ img{max-width:100%;height:auto}
   </div>
   <div class="project-video" id="video-ariasp">
     <div class="project-video-head"><div><h4>Guarda il video del progetto</h4><p>ARIASP · Analisi e valorizzazione dei dati sanitari</p></div><a class="video-open" href="https://vindib3.github.io/expomedicina/ExpoARIASP.mp4" target="_blank" rel="noopener">Apri il video ↗</a></div>
-    <video controls autoplay muted preload="metadata" playsinline><source src="https://vindib3.github.io/expomedicina/ExpoARIASP.mp4" type="video/mp4">Il browser non supporta la riproduzione video. <a href="https://vindib3.github.io/expomedicina/ExpoARIASP.mp4">Apri il video</a>.</video>
+    <video controls preload="metadata" playsinline><source src="https://vindib3.github.io/expomedicina/ExpoARIASP.mp4" type="video/mp4">Il browser non supporta la riproduzione video. <a href="https://vindib3.github.io/expomedicina/ExpoARIASP.mp4">Apri il video</a>.</video>
   </div>
   <article class="project">
     <div class="project-top">
@@ -367,6 +376,36 @@ const sections=[...document.querySelectorAll('main section[id]')];
 const navItems=[...document.querySelectorAll('.navlinks a[href^="#"]')];
 const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){navItems.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+entry.target.id));}})},{rootMargin:'-25% 0px -60% 0px'});
 sections.forEach(s=>observer.observe(s));
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('video').forEach(function(video, index) {
+    video.removeAttribute('autoplay');
+    video.muted = false;
+    var wrap = document.createElement('div');
+    wrap.className = 'audio-launch-wrap';
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'audio-launch-btn';
+    btn.textContent = '▶ Avvia video con audio';
+    var note = document.createElement('span');
+    note.className = 'audio-launch-note';
+    note.textContent = 'Clicca per avviare la riproduzione con audio';
+    wrap.appendChild(btn); wrap.appendChild(note);
+    video.parentNode.insertBefore(wrap, video);
+    btn.addEventListener('click', function() {
+      // Il clic esplicito dell'utente consente al browser di richiedere la riproduzione con audio.
+      document.querySelectorAll('video').forEach(function(other) { if (other !== video) other.pause(); });
+      video.muted = false; video.volume = 1;
+      var result = video.play();
+      if (result && typeof result.catch === 'function') {
+        result.then(function() { btn.textContent = '⏸ Video avviato'; })
+              .catch(function() { btn.textContent = '▶ Riprova ad avviare'; note.textContent = 'Il browser ha bloccato la riproduzione: premi Play sul video.'; });
+      }
+    });
+  });
+});
 </script>
 </body>
 </html>
